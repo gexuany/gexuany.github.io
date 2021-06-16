@@ -1,0 +1,785 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin        : 0;
+	padding       : 0;
+	border        : 0;
+	font-size     : 100%;
+	font          : inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing : 0;
+}
+
+
+
+
+/* ============= My Styles ============= */
+
+
+/* write all the same or similiar properties 
+of the 3 medias */
+
+/* use the background-image to show the image
+in the background */
+
+body {
+	background-color : #f7f7ff;
+	font-family      : 'Montserrat', sans-serif;
+	background-image : url('images/bg-image/scooter.svg');
+	background-repeat: no-repeat;
+}
+
+/* use the font-weight:700 to set the font bold */
+
+.title h1 {
+	color      : #333131;
+	font-weight: 700;
+
+}
+
+/* use the font-weight:700 to set the font bold */
+.title p {
+	color      : #333131;
+	font-size  : 24px;
+	font-weight: 400;
+}
+
+/* use the box shadow to set the shadow of the box
+the properties of box-shadow is h-shadow v-shadow 
+spread and the color insert */
+form {
+	background-color: #fff;
+	border-radius   : 26px;
+	box-shadow      : 5px 10px 14px rgba(51, 49, 49, 0.4);
+}
+
+form h2 {
+	color      : #333131;
+	font-size  : 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+form p {
+	color      : #333131;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+/* use the border:none to get rid of the border
+of the input box */
+
+form input {
+
+	background-color: #F4F4F5;
+	border          : none;
+	border-radius   : 11px;
+
+	font-family: 'Montserrat', sans-serif;
+	color      : #9B9B9B;
+
+}
+
+/* change the style of the checkbox,and set
+the border-radius of the checkbox 5px accordding 
+to the adobe XD file */
+input[type='checkbox'] {
+	-webkit-appearance: none;
+	vertical-align    : middle;
+	margin-top        : 0;
+	background        : #fff;
+	border            : 1px solid #333131;
+	border-radius     : 5px;
+	min-height        : 29px;
+	min-width         : 29px;
+}
+
+
+
+form label {
+	font-size: 16px;
+	color    : #333131;
+}
+
+
+form button {
+	background-color: #57EEAB;
+	padding-top     : 20px;
+	padding-bottom  : 20px;
+	border          : none;
+	border-radius   : 11px;
+	color           : #333131;
+	font-size       : 24px;
+	font-weight     : 700;
+}
+
+form p {
+	font-size: 14px;
+}
+
+form P span {
+	color: #FF8480;
+}
+
+footer {
+	background-color: #FFFD8C;
+}
+
+footer h4 {
+	color      : #333131;
+	font-weight: 700;
+}
+
+footer p {
+	color      : #333131;
+	font-weight: 400;
+}
+
+/* use the padding:10px to set the padding of 
+top,left,bottom,use the color to set the font
+color of the input box */
+
+.calculate input {
+	background-color: #F7F7FF;
+	border          : none;
+	border-radius   : 11px;
+	padding         : 10px;
+	color           : #707070;
+	font-size       : 16px;
+	font-family     : 'Montserrat', sans-serif;
+}
+
+.calculate button {
+	background-color: #FF8480;
+	border          : none;
+	border-radius   : 11px;
+	padding         : 5px 0px;
+	vertical-align  : center;
+	color           : #F7F7FF;
+	font-size       : 24px;
+	font-weight     : 700;
+}
+
+
+/* style of the mobile */
+
+@media screen and (max-width: 767px) {
+	body {
+		background-size    : 289px 211px;
+		background-position: 43px 490px;
+	}
+
+	.container1 img {
+		width       : 114px;
+		padding-left: 36px;
+	}
+
+	.container2 {
+		margin-left : 36px;
+		margin-right: 36px;
+	}
+
+	.container2 h1 {
+		font-size  : 60px;
+		line-height: 73px;
+		min-width  : 300px;
+	}
+
+	.container2 p {
+		font-size  : 24px;
+		line-height: 29px;
+	}
+
+	form {
+		margin-top    : 232px;
+		flex-grow     : 1;
+		padding-top   : 15px;
+		padding-left  : 25px;
+		padding-right : 25px;
+		padding-bottom: 16px;
+		margin-bottom : 10px;
+	}
+
+	form h2,
+	form h5 {
+		margin-bottom: 10px;
+	}
+
+	form .information {
+		display        : flex;
+		flex-direction : column;
+		justify-content: space-between;
+		height         : 205px;
+		margin-bottom  : 15px;
+	}
+
+	.information input {
+		width              : auto;
+		height             : 40px;
+		/* background-color: #FF8480; */
+		font-size          : 16px;
+		padding-left       : 10px;
+	}
+
+	.information .checkbox label {
+		margin-left: 10px;
+	}
+
+
+	/* use width:100% to set the button full width
+	according to parent with padding */
+	form button {
+		padding-top   : 10px;
+		padding-bottom: 10px;
+		margin-top    : 15px;
+		width         : 100%;
+		margin-bottom : 10px;
+	}
+
+
+	form P span {
+		font-size: 14px;
+	}
+
+	/* select the first element of the span to set 
+	the color */
+	form p span:nth-child(1) {
+		color: #333131;
+	}
+
+	
+	/* use the padding to set the top and bottom 21px
+and the left and right 37px */
+	footer {
+		margin-top: 45px;
+		padding   : 21px 37px;
+	}
+
+	footer h4 {
+		font-size    : 18px;
+		line-height  : 22px;
+		margin-bottom: 10px;
+	}
+
+	footer P {
+		font-size    : 16px;
+		margin-bottom: 10px;
+	}
+
+	/* set the parent element display flex to organize
+	its child elements,and the default direction is row
+	and there is two lines of child
+	element so use the flex-wrap: wrap; */
+
+	footer .calculate {
+		display  : flex;
+		flex-wrap: wrap;
+	}
+
+	/* set the first elements of the flex a 
+	specific width */
+	.calculate input:nth-child(1) {
+		width       : 40px;
+		margin-right: 10px;
+
+	}
+
+	/* set the second element to fill the 
+	rest of the flex */
+	.calculate input:nth-child(2) {
+		flex-grow: 1;
+	}
+
+	/* set the third element to fill the 
+	rest of the flex */
+
+	.calculate button {
+		flex-grow : 1;
+		margin-top: 10px;
+	}
+
+	/* set the .icon box a flex parent and use 
+	space around to organize its child element */
+	footer .icon {
+		margin-top     : 30px;
+		display        : flex;
+		flex-direction : row;
+		justify-content: space-around;
+	}
+
+	/* set the border-radius equals to its edge length 
+	to make it round */
+
+	.icon img:nth-child(1) {
+
+		border-radius: 29px;
+	}
+
+}
+
+/* The tablet style */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+	body {
+		background-size    : 420px 307px;
+		background-position: top 488px left 174px;
+	}
+
+
+	.container1 img {
+		width       : 114px;
+		padding-left: 84px;
+	}
+
+	.container2 {
+		margin-left : 82px;
+		margin-right: 82px;
+	}
+
+	.container2 h1 {
+		max-width    : 466px;
+		font-size    : 80px;
+		line-height  : 97px;
+		margin-top   : 20px;
+		margin-bottom: 10px;
+	}
+
+	.container2 p {
+		margin-top: 25px;
+		width     : 565px;
+	}
+
+	form {
+		margin-top   : 320px;
+		margin-bottom: 90px;
+		padding-top   : 15px;
+		padding-left  : 40px;
+		padding-right : 40px;
+		padding-bottom: 16px;
+	}
+
+	form h2 {
+		margin-top   : 20px;
+		margin-bottom: 20px;
+	}
+
+	form h5 {
+		font-size    : 30px;
+		margin-top   : 10px;
+		margin-bottom: 15px;
+	}
+
+	/* set the .information box the flex parent and
+	use the jutify-content to organize the child element
+	*/
+
+	form .information {
+
+		display        : flex;
+		flex-direction : column;
+		justify-content: space-between;
+		height         : 265px;
+		margin-bottom  : 15px;
+	}
+
+	.information input {
+		width       : auto;
+		height      : 55px;
+		font-size   : 17px;
+		padding-left: 15px;
+		font-family : 'Montserrat', sans-serif;
+	}
+
+	form label {
+		margin-left: 10px;
+		font-size  : 20px;
+	}
+
+	form button {
+		width        : 100%;
+		height       : 64px;
+		line-height  : 25px;
+		margin-top   : 12px;
+		margin-bottom: 15px;
+		font-size    : 32px;
+		font-weight  : 700;
+	}
+
+	/* set the margin to make the element center */
+
+	form P {
+		margin-left  : -25px;
+		text-align   : center;
+		margin-bottom: 20px;
+		font-size    : 17px;
+	}
+
+	form p span:nth-child(1) {
+		color: #333131;
+	}
+
+	footer {
+		margin-top: 45px;
+		padding   : 21px 84px;
+	}
+
+	footer h4 {
+		font-size    : 18px;
+		line-height  : 22px;
+		margin-bottom: 15px;
+	}
+
+	footer P {
+		font-size    : 16px;
+		margin-bottom: 10px;
+	}
+
+	footer .calculate {
+		display: flex;
+	}
+
+	.calculate input:nth-child(1) {
+		width       : 122px;
+		margin-right: 10px;
+	}
+
+	.calculate input:nth-child(2) {
+		flex-grow   : 1;
+		margin-right: 10px;
+	}
+
+	.calculate button {
+		padding-left : 20px;
+		padding-right: 20px;
+		flex-grow    : 1;
+		height       : 40px;
+		text-align   : center;
+	}
+
+	/* use the space-between to organize all the elements
+	 use the margin:0 auto; to make the elements center*/
+	footer .icon {
+		margin         : 0 auto;
+		margin-top     : 30px;
+		width          : 260px;
+		display        : flex;
+		flex-direction : row;
+		justify-content: space-between;
+	}
+
+	/* set the border-radius equals to its edge length 
+	to make it round */
+
+	.icon img:nth-child(1) {
+		border-radius: 29px;
+	}
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+	body {
+		background-color   : #fff;
+		background-size    : 820px 600px;
+		background-position: top 220px right 550px;
+	}
+
+	.container1 img {
+		width      : 114px;
+		margin-left: 140px;
+		margin-top : 5px;
+	}
+
+	/* use the flex to set the element the flex parent
+	and use the space-between to make the child element
+	two end of the flex box */
+	.container2 {
+		margin-top     : 100px;
+		margin-left    : 140px;
+		margin-right   : 140px;
+		display        : flex;
+		justify-content: space-between;
+	}
+
+	.container2 h1 {
+		max-width    : 467px;
+		font-size    : 80px;
+		line-height  : 97px;
+		margin-bottom: 30px;
+	}
+
+	.container2 p {
+		width      : 536px;
+		line-height: 29px;
+	}
+
+	.form {
+		width: 535px;
+	}
+
+	form {
+		width         : max-content;
+		margin-bottom : 92px;
+		padding-top   : 15px;
+		padding-left  : 44px;
+		padding-right : 44px;
+		padding-bottom: 16px;
+	}
+
+	form h2 {
+		width        : 450px;
+		margin-top   : 20px;
+		margin-bottom: 20px;
+	}
+
+	form h5 {
+		width        : 450px;
+		font-size    : 24px;
+		margin-top   : 10px;
+		margin-bottom: 15px;
+	}
+
+	form .information {
+		display        : flex;
+		flex-direction : column;
+		justify-content: space-between;
+		min-height     : 265px;
+		margin-bottom  : 15px;
+	}
+
+	.information input {
+		max-width   : 450px;
+		height      : 55px;
+		font-size   : 16px;
+		padding-left: 10px;
+	}
+
+	.information .checkbox label {
+		margin-left: 10px;
+	}
+
+	form button {
+		width         : 452px;
+		margin-top    : 12px;
+		margin-bottom : 15px;
+		font-size     : 32px;
+		font-weight   : 700;
+		padding-top   : 10px;
+		padding-bottom: 10px;
+	}
+
+	form P {
+		margin-left: -48px;
+		text-align : center;
+	}
+
+	form p span:nth-child(1) {
+		color: #333131;
+	}
+
+
+	footer {
+		display        : flex;
+		justify-content: space-between;
+		padding        : 0px 140px;
+		min-height     : 180px;
+		height         : 180px;
+	}
+
+	footer h4 {
+		font-size    : 18px;
+		line-height  : 22px;
+		margin-top   : 40px;
+		margin-bottom: 10px;
+	}
+
+	footer P {
+		font-size    : 16px;
+		margin-bottom: 10px;
+	}
+
+	/* use the flex to make the element flex parent */
+	footer .calculate {
+		display  : flex;
+		min-width: 615px;
+	}
+
+	/* set a specific width to its first child */
+	.calculate input:nth-child(1) {
+		width       : 122px;
+		margin-right: 10px;
+	}
+
+	/* set the flex-grow to let the second child fill 
+the rest room of the flex box */
+	.calculate input:nth-child(2) {
+		min-width   : 260px;
+		flex-grow   : 1;
+		margin-right: 10px;
+	}
+
+	/* set a min-width to the third element of the flex
+child according to the design file and let it to
+be flexible */
+	.calculate button {
+		min-width : 200px;
+		height    : 40px;
+		text-align: center;
+	}
+
+	footer .icon {
+		width          : 260px;
+		display        : flex;
+		flex-direction : row;
+		justify-content: space-between;
+	}
+
+	.icon img {
+		width: 30px;
+	}
+
+	/* use the order to make the second element first place
+in the row */
+	.icon img:nth-child(2) {
+		order: -2;
+	}
+
+	/* use the order to make the third element second place
+in the row */
+
+	.icon img:nth-child(3) {
+		order              : -1;
+		/* background-color: #57EEAB; */
+	}
+
+}
