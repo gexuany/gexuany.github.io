@@ -361,8 +361,8 @@ footer .icons {
         width     : 100%;
     }
 
-    footer .icons{
-        margin-left: auto;
+    footer .icons {
+        margin-left : auto;
         margin-right: auto;
     }
 
@@ -489,14 +489,15 @@ footer .icons {
         padding-bottom: 20px;
     }
 
-    footer .icons{
-        margin-left: auto;
+    footer .icons {
+        margin-left : auto;
         margin-right: auto;
     }
+
     /* =======footer end======= */
 
 
-   
+
 }
 
 /* The desktop style */
@@ -614,10 +615,10 @@ footer .icons {
     }
 
 
-
+    /* ========footer start======= */
     footer {
-        height: 100px;
-        padding-top: 85px;
+        height        : 100px;
+        padding-top   : 85px;
         padding-bottom: 75px;
     }
 
@@ -651,4 +652,7 @@ footer .icons {
         font-size  : 14px;
         line-height: 24px;
     }
+
+    /* ========footer end======= */
+
 }
