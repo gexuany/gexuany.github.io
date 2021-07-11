@@ -626,6 +626,7 @@ footer .icons {
         margin-left    : 331px;
         margin-right   : 331px;
         display        : flex;
+        flex-direction : row;
         justify-content: space-between;
     }
 
@@ -633,13 +634,15 @@ footer .icons {
         margin-right: auto;
     }
 
-    footer div.icons {
+   
+
+    .container3 .icons {
         display        : flex;
         flex-direction : row;
         justify-content: space-between;
         min-width      : 130px;
         margin-top     : 24px;
-        margin-left    : auto;
+
     }
 
     footer div h4 {
