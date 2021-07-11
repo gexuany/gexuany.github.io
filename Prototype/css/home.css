@@ -362,6 +362,10 @@ footer .icons {
         width     : 100%;
     }
 
+    footer .icons{
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
 }
@@ -484,6 +488,8 @@ footer .icons {
         padding-top   : 48px;
         padding-bottom: 20px;
     }
+
+   
 }
 
 /* The desktop style */
