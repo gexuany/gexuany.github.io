@@ -1,0 +1,639 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin        : 0;
+    padding       : 0;
+    border        : 0;
+    font-size     : 100%;
+    font          : inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+
+/* =======My style======= */
+
+/* =====header start====== */
+body {
+    /* max-width: 375px; */
+    width: 100%;
+}
+
+
+h1 {
+    color      : #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size  : 42px;
+    padding-top: 24px;
+    text-align : center;
+    line-height: 42px;
+}
+
+nav a {
+    display         : block;
+    height          : 24px;
+    color           : #fff;
+    font-family     : 'Josefin Sans', sans-serif;
+    font-size       : 14px;
+    text-decoration : none;
+    text-align      : center;
+    line-height     : 24px;
+    background-color: #F3D1CA;
+
+}
+
+nav a:hover {
+    background-color: #E93F68;
+}
+
+/* =====header end====== */
+
+/* =====main start====== */
+/*container1 star */
+
+main img {
+    max-width: 100%;
+}
+
+main .container1 div:nth-child(1) {
+    background-color: #F9E8E5;
+    height          : 100px;
+
+}
+
+main .container1 h2 {
+    color      : #000;
+    font-size  : 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align : center;
+    line-height: 100px;
+}
+
+.flex1 {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    margin-top    : 12px;
+}
+
+.flex1 img {
+    width        : 77.33%;
+    margin-bottom: 24px;
+}
+
+.flex1 div {
+    width: 77.33%;
+}
+
+.flex1 p {
+    color      : #000;
+    font-size  : 12px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 16px;
+}
+
+.flex1 div:nth-child(2) {
+    width : 142px;
+    height: 40px;
+}
+
+input {
+    display         : block;
+    background-color: #E93F68;
+    border          : none;
+    color           : #fff;
+    font-size       : 16px;
+    font-family     : 'Josefin Sans', sans-serif;
+    width           : 142px;
+    height          : 40px;
+    margin          : 0 auto;
+    margin-top      : 24px;
+}
+
+/*container1 end */
+
+/*container2 start */
+
+main .container2 {
+    margin-top      : 24px;
+    padding-top     : 24px;
+    background-color: #F9E8E5;
+    padding-bottom  : 24px;
+}
+
+main .container2 h2 {
+    background-color: #fff;
+    font-family     : 'Josefin Sans', sans-serif;
+    font-size       : 18px;
+    height          : 65px;
+    width           : 77.33%;
+    text-align      : center;
+    line-height     : 65px;
+    margin          : 0 auto;
+    margin-bottom   : 24px;
+}
+
+.flex2 {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.flex2 .card {
+    margin-left     : 42px;
+    margin-right    : 42px;
+    margin-bottom   : 20px;
+    background-color: #fff;
+}
+
+.flex2 img {
+    width        : 100%;
+    margin-bottom: 0;
+}
+
+.card div {
+    padding-top: 0;
+
+    padding-bottom: 36px;
+}
+
+.card h3 {
+    color        : #000;
+    font-size    : 18px;
+    font-family  : 'Josefin Sans', sans-serif;
+    padding-top  : 24px;
+    margin-bottom: 24px;
+    text-align   : center;
+}
+
+.card p {
+    color      : #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size  : 12px;
+    line-height: 16px;
+    text-align : center;
+}
+
+/*container2 end */
+
+/* =====main end====== */
+
+/* =====footer start====== */
+
+footer {
+    padding-top     : 24px;
+    padding-bottom  : 24px;
+    background-color: #8EC89A;
+}
+
+footer h4 {
+    color        : #fff;
+    font-family  : 'Josefin Sans', sans-serif;
+    font-size    : 16px;
+    text-align   : center;
+    margin-bottom: 16px;
+}
+
+footer p {
+    color      : #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size  : 12px;
+    line-height: 24px;
+    text-align : center;
+}
+
+footer .icons {
+    display           : flex;
+    flex-direction    : row;
+    justify-content   : space-between;
+    max-width         : 130px;
+    /* margin         : 0 auto; */
+    margin-top        : 24px;
+}
+
+/* =====footer end====== */
+
+/* The mobile style */
+
+@media screen and (max-width: 767px) {
+
+    header {
+        display          : flex;
+        flex-direction   : column;
+        align-items      : center;
+        background-image : url('../images/Path-mobile.svg');
+        background-repeat: no-repeat;
+        background-size  : contain;
+    }
+
+    header div {
+        text-align: center;
+    }
+
+    header img {
+        width     : 37.5%;
+        margin-top: 36px;
+    }
+
+    nav {
+        margin-top: 40px;
+        width     : 100%;
+    }
+
+
+
+}
+
+
+
+/* The tablet style */
+
+@media screen and (min-width: 768px) {
+
+    /* =======header start====== */
+    header {
+        background-image : url('../images/Path-tablet.svg');
+        background-repeat: no-repeat;
+        background-size  : contain;
+        padding-top      : 12px;
+        padding-left     : 82px;
+        padding-right    : 82px;
+    }
+
+    header h1 {
+        font-size    : 80px;
+        margin-bottom: 24px;
+    }
+
+    header img {
+        width     : 205px;
+        text-align: right;
+
+    }
+
+    header div {
+        text-align: right;
+    }
+
+    nav {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        margin-bottom  : 56px;
+        margin-top     : 48px;
+    }
+
+    nav a {
+        display         : block;
+        width           : 100px;
+        height          : 40px;
+        background-color: #F3D1CA;
+        text-align      : center;
+        line-height     : 40px;
+        font-size       : 18px;
+    }
+
+    /* =======header end====== */
+
+    main .container1 div:nth-child(1) {
+        height: 200px;
+    }
+
+    main .container1 h2 {
+        line-height: 200px;
+    }
+
+    .container1 .flex1 {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        margin-top     : 40px;
+        padding-left   : 82px;
+        padding-right  : 82px;
+    }
+
+    .flex1 img {
+        width: calc(100% / 3 - 5px);
+    }
+
+    .container1 p {
+        padding-left : 82px;
+        padding-right: 82px;
+        font-family  : 'Josefin Sans', sans-serif;
+        font-size    : 18px;
+        line-height  : 25px;
+    }
+
+    .container1 input {
+        margin-bottom: 40px;
+    }
+
+    .container2 {
+        padding-left : 82px;
+        padding-right: 82px;
+
+    }
+
+    main .container2 h2 {
+        width : 296px;
+        height: 65px;
+    }
+
+    main .container2 .flex2 {
+        display        : flex;
+        flex-direction : row;
+        flex-wrap      : wrap;
+        justify-content: space-between;
+    }
+
+    main .container2 .card {
+        /* background-color: coral; */
+        width        : calc(100% / 2 - 6px);
+        margin       : 0;
+        margin-bottom: 40px;
+    }
+
+    .container2 input {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        height        : 132px;
+        padding-top   : 48px;
+        padding-bottom: 20px;
+    }
+}
+
+/* The desktop style */
+
+@media screen and (min-width: 1024px) {
+
+    /* =======header start====== */
+    header {
+        background-image : url('../images/Path-desktop.svg');
+        background-repeat: no-repeat;
+        background-size  : contain;
+        padding-top      : 12px;
+        padding-left     : 148px;
+        padding-right    : 148px;
+    }
+
+    header .title {
+        display        : flex;
+        justify-content: space-between;
+        margin-top     : 70px;
+
+    }
+
+    header h1 {
+        font-size: 80px;
+    }
+
+    header img {
+        width: 235px;
+
+
+    }
+
+    header div {
+        text-align: right;
+    }
+
+    nav {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        margin-bottom  : 56px;
+        margin-top     : 48px;
+    }
+
+    nav a {
+        width      : 257px;
+        height     : 85px;
+        line-height: 85px;
+        font-size  : 32px;
+    }
+
+    /* =======header end====== */
+
+    main .banner {
+        height: 658px;
+    }
+
+    main .container1 .flex1 {
+        padding-left : 148px;
+        padding-right: 148px;
+        margin-bottom: 64px;
+    }
+
+
+    main .container1 h2 {
+        font-size: 50px;
+    }
+
+    .flex1 img {
+        width: calc(100% / 3 - 12px);
+    }
+
+    .container1 p {
+        padding-left : 148px;
+        padding-right: 148px;
+        font-size    : 28px;
+        line-height  : 37px;
+        margin-bottom: 40px;
+    }
+
+    main input {
+        width        : 159px;
+        height       : 41px;
+        font-size    : 28px;
+        margin-bottom: 70px;
+    }
+
+    main .container2 h2 {
+        font-size    : 50px;
+        width        : 525px;
+        height       : 100px;
+        line-height  : 100px;
+        margin-bottom: 70px;
+        margin-top   : 52px;
+    }
+
+    main .container2 .card {
+        width        : calc(100% / 3 - 12px);
+        margin-bottom: 100px;
+    }
+
+    .flex2 .card h3 {
+        font-size : 32px;
+        margin-top: 30px;
+
+    }
+
+    .flex2 .card p {
+        font-size    : 18px;
+        line-height  : 25px;
+        margin-left  : 70px;
+        margin-right : 70px;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        height: 100px;
+        padding-top: 85px;
+        padding-bottom: 75px;
+    }
+
+    footer .container3 {
+        margin-left    : 331px;
+        margin-right   : 331px;
+        display        : flex;
+        justify-content: space-between;
+    }
+
+    .container3 div:nth-child(1) {
+        margin-right: auto;
+    }
+
+    footer div.icons {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        min-width      : 130px;
+        margin-top     : 24px;
+        margin-left    : auto;
+    }
+
+    footer div h4 {
+        text-align: left;
+        font-size : 18px;
+    }
+
+    footer div p {
+        text-align : left;
+        font-size  : 14px;
+        line-height: 24px;
+    }
+}
