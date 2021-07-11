@@ -1,0 +1,404 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin        : 0;
+    padding       : 0;
+    border        : 0;
+    font-size     : 100%;
+    font          : inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+
+/* =======My style======= */
+
+/* =====header start====== */
+body {
+    width: 100%;
+}
+
+
+h1 {
+    color      : #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size  : 42px;
+    padding-top: 24px;
+    text-align : center;
+    line-height: 42px;
+}
+
+nav a {
+    display         : block;
+    height          : 24px;
+    color           : #fff;
+    font-family     : 'Josefin Sans', sans-serif;
+    font-size       : 14px;
+    text-decoration : none;
+    text-align      : center;
+    line-height     : 24px;
+    background-color: #F3D1CA;
+
+}
+
+nav a:hover {
+    background-color: #E93F68;
+}
+
+/* =====header end====== */
+
+
+/* =====main start====== */
+main h2 {
+    font-family     : 'Josefin Sans', sans-serif;
+    background-color: #8EC89A;
+    height          : 100px;
+    text-align      : center;
+    line-height     : 100px;
+}
+
+main div {
+    text-align: center;
+}
+
+main h3 {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+main input {
+    background-color: #E93F68;
+    border          : none;
+    font-family     : 'Josefin Sans', sans-serif;
+    color           : #fff;
+
+}
+
+.containerp .text {
+    background-color: #F3D1CA;
+}
+
+
+
+
+
+/* =====main end====== */
+
+
+/* =====footer start====== */
+
+footer {
+    padding-top     : 24px;
+    padding-bottom  : 24px;
+    background-color: #8EC89A;
+}
+
+footer h4 {
+    color        : #fff;
+    font-family  : 'Josefin Sans', sans-serif;
+    font-size    : 16px;
+    text-align   : center;
+    margin-bottom: 16px;
+}
+
+footer p {
+    color      : #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size  : 12px;
+    line-height: 24px;
+    text-align : center;
+}
+
+footer .icons {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    max-width      : 130px;
+    margin-top     : 24px;
+}
+
+/* =====footer end====== */
+
+/* The mobile style */
+
+@media screen and (max-width: 767px) {
+
+    header {
+        display          : flex;
+        flex-direction   : column;
+        align-items      : center;
+        background-image : url('../images/Path-mobile.svg');
+        background-repeat: no-repeat;
+        background-size  : contain;
+    }
+
+    header div {
+        text-align: center;
+    }
+
+    header img {
+        width     : 37.5%;
+        margin-top: 36px;
+    }
+
+    nav {
+        margin-top: 40px;
+        width     : 100%;
+    }
+
+    main .text {
+        padding-top  : 50px;
+        width        : 77.6%;
+        margin       : 0 auto;
+        margin-bottom: 24px;
+    }
+
+    main img {
+        width         : 77.6%;
+        vertical-align: middle;
+    }
+
+    main h3 {
+        font-size    : 24px;
+        /* margin-top: 50px; */
+    }
+
+    main p {
+        width        : 142px;
+        font-size    : 12px;
+        margin-left  : auto;
+        margin-right : auto;
+        margin-top   : 30px;
+        margin-bottom: 24px;
+    }
+
+    main input {
+        margin-bottom: 40px;
+        width        : 140px;
+        height       : 30px;
+    }
+
+
+
+
+
+    footer .icons {
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+
+}
+
+/* The tablet style */
+
+@media screen and (min-width: 768px) {
+
+    /* =======header start====== */
+    header {
+        background-image : url('../images/Path-tablet.svg');
+        background-repeat: no-repeat;
+        background-size  : contain;
+        padding-top      : 12px;
+        padding-left     : 82px;
+        padding-right    : 82px;
+    }
+
+    header h1 {
+        font-size    : 80px;
+        margin-bottom: 24px;
+    }
+
+    header img {
+        width     : 205px;
+        text-align: right;
+
+    }
+
+    header div {
+        text-align: right;
+    }
+
+    nav {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        margin-bottom  : 56px;
+        margin-top     : 48px;
+    }
+
+    nav a {
+        display         : block;
+        width           : 100px;
+        height          : 40px;
+        background-color: #F3D1CA;
+        text-align      : center;
+        line-height     : 40px;
+        font-size       : 18px;
+    }
+
+    /* =======header end====== */
+
+    main .containerp{
+        /* padding-left: 82px;
+        padding-right: 82px; */
+        padding-left: 10.7%;
+        padding-right: 10.7%;
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        
+    }
+
+    main img{
+        width        : calc(100% - 12px);
+        /* margin-bottom: 12px; */
+        padding:0;
+        margin: 0;
+       
+    }
+
+
+
+    /* =======footer start======= */
+    footer {
+        height        : 132px;
+        padding-top   : 48px;
+        padding-bottom: 20px;
+    }
+
+    footer .icons{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* =======footer end======= */
+
+}

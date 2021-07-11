@@ -137,7 +137,6 @@ table {
 
 /* =====header start====== */
 body {
-    /* max-width: 375px; */
     width: 100%;
 }
 
@@ -483,11 +482,19 @@ footer .icons {
         margin-bottom: 40px;
     }
 
+    /* =======footer start======= */
     footer {
         height        : 132px;
         padding-top   : 48px;
         padding-bottom: 20px;
     }
+
+    footer .icons{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* =======footer end======= */
+
 
    
 }
@@ -605,6 +612,8 @@ footer .icons {
         margin-right : 70px;
         margin-bottom: 30px;
     }
+
+
 
     footer {
         height: 100px;
