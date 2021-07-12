@@ -136,9 +136,7 @@ table {
 /* =======My style======= */
 
 /* =====header start====== */
-body {
-    /* width: 100%; */
-}
+
 
 
 h1 {
@@ -170,109 +168,111 @@ nav a:hover {
 /* =====header end====== */
 
 /* =====main start====== */
-main h2{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 36px;
+main h2 {
+    font-family  : 'Josefin Sans', sans-serif;
+    font-size    : 24px;
+    text-align   : center;
+    margin-top   : 36px;
     margin-bottom: 36px;
 }
 
-main p{
+main p {
     font-family: 'Montserrat', sans-serif;
-    text-align: center; 
-    
+    text-align : center;
+
 }
 
 main .form {
-    
-    background-color:#F9E8E5;
-    display: flex;
-    flex-direction: column;
-  
+
+    background-color: #F9E8E5;
+    display         : flex;
+    flex-direction  : column;
+
 }
 
-main .owner{
+main .owner {
     text-align: center;
 }
 
-main div input{
+main div input {
     display: block;
-    
-    
+
+
 }
 
-main .containerf{
+main .containerf {
     margin: 0 auto;
-    
+
 }
 
-main label{
-    display: block;
+main label {
+    display    : block;
     font-family: 'Josefin Sans', sans-serif;
-    
-    
+
+
 }
 
-main .button{
-    font-family: 'Josefin Sans', sans-serif;
-    border: none;
+main .button {
+    font-family     : 'Josefin Sans', sans-serif;
+    border          : none;
     background-color: #E93F68;
-    text-align: center;
-    color: #fff;
-    
+    text-align      : center;
+    color           : #fff;
+
 }
 
-main img{
+main img {
     width: 57.33%;
-    
+
 }
 
-main p{
-    width: 77%;
-    margin: 24px auto;
-    font-size: 14px;
+main p {
+    width      : 77%;
+    margin     : 24px auto;
+    font-size  : 14px;
     line-height: 28px;
 
-   
+
 }
 
-main .containerf{
-   width: 77.3%;
-   padding-top: 24px;
+main .containerf {
+    width      : 77.3%;
+    padding-top: 24px;
 }
 
-.containerf input,textarea{
-   width: 98%;
-   border: 1px solid #707070;
-   margin-bottom: 24px;
+.containerf input,
+textarea {
+    width        : 98%;
+    border       : 1px solid #707070;
+    margin-bottom: 24px;
 }
 
-.containerf input{
-   height: 48px;
+.containerf input {
+    height: 48px;
 }
 
-.containerf textarea{
-height:175px;
+.containerf textarea {
+    height: 175px;
 }
 
-.containerf .button{
-    width: 100%;
+.containerf .button {
+    width    : 100%;
     font-size: 24px;
-    border:none;
+    border   : none;
 }
 
-.form label{
-    font-size: 20px;
+.form label {
+    font-size    : 20px;
     margin-bottom: 12px;
 }
 
-main .map{
+main .map {
     text-align: center;
-
+    height    : 300px;
 }
-main iframe{
-   width: 77.3%;
+
+main iframe {
+    width: 77.3%;
 }
 
 
@@ -350,9 +350,10 @@ footer .icons {
 
 }
 
-@media screen and (min-width: 767px){
-     /* =======header start====== */
-     header {
+@media screen and (min-width: 767px) {
+
+    /* =======header start====== */
+    header {
         background-image : url('../images/Path-tablet.svg');
         background-repeat: no-repeat;
         background-size  : contain;
@@ -396,6 +397,36 @@ footer .icons {
 
     /* =======header end====== */
 
+    main .owner img {
+        width: 38.5%;
+    }
+
+    main .owner p {
+        width: 78.6%;
+    }
+
+    .form .containerf {
+        width   : 78.6%;
+        /* width: ; */
+    }
+
+    .form .button {
+        width : 296px;
+        margin: 0 auto;
+    }
+
+    .form {
+        padding-bottom: 24px;
+    }
+
+    main .map {
+        height: 400px;
+    }
+
+    main p {
+        font-size  : 18px;
+        line-height: 36px;
+    }
 
     /* =======footer start======= */
     footer {
@@ -410,5 +441,143 @@ footer .icons {
     }
 
     /* =======footer end======= */
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* =======header start====== */
+    header {
+        background-image : url('../images/Path-desktop.svg');
+        background-repeat: no-repeat;
+        background-size  : contain;
+        padding-top      : 12px;
+        padding-left     : 148px;
+        padding-right    : 148px;
+    }
+
+    header .title {
+        display        : flex;
+        justify-content: space-between;
+        margin-top     : 70px;
+
+    }
+
+    header h1 {
+        font-size: 80px;
+    }
+
+    header img {
+        width: 235px;
+
+
+    }
+
+    header div {
+        text-align: right;
+    }
+
+    nav {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        margin-bottom  : 56px;
+        margin-top     : 48px;
+    }
+
+    nav a {
+        width      : 257px;
+        height     : 85px;
+        line-height: 85px;
+        font-size  : 32px;
+    }
+
+    /* =======header end====== */
+
+    /* =======main start====== */
+
+    main h2 {
+        font-size    : 48px;
+        margin-top   : 48px;
+        margin-bottom: 48px;
+    }
+
+    main .flexo {
+        margin-left   : auto;
+        margin-right  : auto;
+        display       : grid;
+        grid-template-columns: repeat(9,1fr);
+        column-gap: 24px;
+
+
+        width         : calc(100% - 296px);
+        /* height        : 785px; */
+    }
+    .flexo .owner{
+        grid-column: 1/4;
+    }
+    main .owner img {
+        width: 100%;
+    }
+
+    main .flexo p{
+        grid-column: 5/10;
+        /* background-color: aqua; */
+        width: 100%;
+        margin: auto 0;
+        font-size: 32px;
+        line-height: 64px;
+    }
+
+
+
+
+
+
+    /* =======main end====== */
+
+
+    /* ========footer start======= */
+    footer {
+        height        : 100px;
+        padding-top   : 85px;
+        padding-bottom: 75px;
+    }
+
+    footer .container3 {
+        margin-left    : 331px;
+        margin-right   : 331px;
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+    }
+
+    .container3 div:nth-child(1) {
+        margin-right: auto;
+    }
+
+
+
+    .container3 .icons {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        min-width      : 130px;
+        margin-top     : 24px;
+
+    }
+
+    footer div h4 {
+        text-align: left;
+        font-size : 18px;
+    }
+
+    footer div p {
+        text-align : left;
+        font-size  : 14px;
+        line-height: 24px;
+    }
+
+    /* ========footer end======= */
 
 }
