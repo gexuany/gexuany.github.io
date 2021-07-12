@@ -223,6 +223,59 @@ main .button{
     
 }
 
+main img{
+    width: 57.33%;
+    
+}
+
+main p{
+    width: 77%;
+    margin: 24px auto;
+    font-size: 14px;
+    line-height: 28px;
+
+   
+}
+
+main .containerf{
+   width: 77.3%;
+   padding-top: 24px;
+}
+
+.containerf input,textarea{
+   width: 98%;
+   border: 1px solid #707070;
+   margin-bottom: 24px;
+}
+
+.containerf input{
+   height: 48px;
+}
+
+.containerf textarea{
+height:175px;
+}
+
+.containerf .button{
+    width: 100%;
+    font-size: 24px;
+    border:none;
+}
+
+.form label{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+main .map{
+    text-align: center;
+
+}
+main iframe{
+   width: 77.3%;
+}
+
+
 
 /* =====main end====== */
 
@@ -289,66 +342,73 @@ footer .icons {
         width     : 100%;
     }
 
-    main .owner{
-        /* text-align: center; */
-        /* margin-bottom: 24px; */
-    }
-    main img{
-        width: 57.33%;
-        
+    footer .icons {
+        margin-left : auto;
+        margin-right: auto;
     }
 
-    main p{
-        width: 77%;
-        /* background-color: blue; */
-        margin: 24px auto;
-        font-size: 14px;
-        line-height: 28px;
 
-       
-    }
-
-   main .containerf{
-       /* background-color: blueviolet; */
-       width: 77.3%;
-       padding-top: 24px;
-       /* margin: 0 auto; */
-   }
-
-   .containerf input,textarea{
-       width: 98%;
-       border: 1px solid #707070;
-       margin-bottom: 24px;
-   }
-
-   .containerf input{
-       height: 48px;
-   }
-
-   .containerf textarea{
-    height:175px;
 }
 
-    .containerf .button{
-        width: 100%;
-        /* background-color: blueviolet; */
-        font-size: 24px;
-        border:none;
+@media screen and (min-width: 767px){
+     /* =======header start====== */
+     header {
+        background-image : url('../images/Path-tablet.svg');
+        background-repeat: no-repeat;
+        background-size  : contain;
+        padding-top      : 12px;
+        padding-left     : 82px;
+        padding-right    : 82px;
     }
 
-    .form label{
-        font-size: 20px;
-        margin-bottom: 12px;
+    header h1 {
+        font-size    : 80px;
+        margin-bottom: 24px;
     }
 
+    header img {
+        width     : 205px;
+        text-align: right;
+
+    }
+
+    header div {
+        text-align: right;
+    }
+
+    nav {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        margin-bottom  : 56px;
+        margin-top     : 48px;
+    }
+
+    nav a {
+        display         : block;
+        width           : 100px;
+        height          : 40px;
+        background-color: #F3D1CA;
+        text-align      : center;
+        line-height     : 40px;
+        font-size       : 18px;
+    }
+
+    /* =======header end====== */
 
 
-
+    /* =======footer start======= */
+    footer {
+        height        : 132px;
+        padding-top   : 48px;
+        padding-bottom: 20px;
+    }
 
     footer .icons {
         margin-left : auto;
         margin-right: auto;
     }
 
+    /* =======footer end======= */
 
 }
