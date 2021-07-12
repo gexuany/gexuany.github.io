@@ -1,0 +1,354 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin        : 0;
+    padding       : 0;
+    border        : 0;
+    font-size     : 100%;
+    font          : inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+
+/* =======My style======= */
+
+/* =====header start====== */
+body {
+    /* width: 100%; */
+}
+
+
+h1 {
+    color      : #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size  : 42px;
+    padding-top: 24px;
+    text-align : center;
+    line-height: 42px;
+}
+
+nav a {
+    display         : block;
+    height          : 24px;
+    color           : #fff;
+    font-family     : 'Josefin Sans', sans-serif;
+    font-size       : 14px;
+    text-decoration : none;
+    text-align      : center;
+    line-height     : 24px;
+    background-color: #F3D1CA;
+
+}
+
+nav a:hover {
+    background-color: #E93F68;
+}
+
+/* =====header end====== */
+
+/* =====main start====== */
+main h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+main p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    
+}
+
+main .form {
+    
+    background-color:#F9E8E5;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+main .owner{
+    text-align: center;
+}
+
+main div input{
+    display: block;
+    
+    
+}
+
+main .containerf{
+    margin: 0 auto;
+    
+}
+
+main label{
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    
+}
+
+main .button{
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    background-color: #E93F68;
+    text-align: center;
+    color: #fff;
+    
+}
+
+
+/* =====main end====== */
+
+
+/* =====footer start====== */
+
+footer {
+    padding-top     : 24px;
+    padding-bottom  : 24px;
+    background-color: #8EC89A;
+}
+
+footer h4 {
+    color        : #fff;
+    font-family  : 'Josefin Sans', sans-serif;
+    font-size    : 16px;
+    text-align   : center;
+    margin-bottom: 16px;
+}
+
+footer p {
+    color      : #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size  : 12px;
+    line-height: 24px;
+    text-align : center;
+}
+
+footer .icons {
+    display           : flex;
+    flex-direction    : row;
+    justify-content   : space-between;
+    max-width         : 130px;
+    /* margin         : 0 auto; */
+    margin-top        : 24px;
+}
+
+/* =====footer end====== */
+
+/* The mobile style */
+
+@media screen and (max-width: 767px) {
+
+    header {
+        display          : flex;
+        flex-direction   : column;
+        align-items      : center;
+        background-image : url('../images/Path-mobile.svg');
+        background-repeat: no-repeat;
+        background-size  : contain;
+    }
+
+    header div {
+        text-align: center;
+    }
+
+    header img {
+        width     : 37.5%;
+        margin-top: 36px;
+    }
+
+    nav {
+        margin-top: 40px;
+        width     : 100%;
+    }
+
+    main .owner{
+        /* text-align: center; */
+        /* margin-bottom: 24px; */
+    }
+    main img{
+        width: 57.33%;
+        
+    }
+
+    main p{
+        width: 77%;
+        /* background-color: blue; */
+        margin: 24px auto;
+        font-size: 14px;
+        line-height: 28px;
+
+       
+    }
+
+   main .containerf{
+       /* background-color: blueviolet; */
+       width: 77.3%;
+       padding-top: 24px;
+       /* margin: 0 auto; */
+   }
+
+   .containerf input,textarea{
+       width: 98%;
+       border: 1px solid #707070;
+       margin-bottom: 24px;
+   }
+
+   .containerf input{
+       height: 48px;
+   }
+
+   .containerf textarea{
+    height:175px;
+}
+
+    .containerf .button{
+        width: 100%;
+        /* background-color: blueviolet; */
+        font-size: 24px;
+        border:none;
+    }
+
+    .form label{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+
+
+
+
+    footer .icons {
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+
+}
