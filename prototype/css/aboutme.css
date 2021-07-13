@@ -181,6 +181,7 @@ main p {
     text-align : center;
 
 }
+
 /*  */
 main .form {
 
@@ -194,12 +195,13 @@ main .owner {
     text-align: center;
 }
 
+/* convert the element to block element,so it can be add width and height*/
 main div input {
     display: block;
-
-
 }
 
+/* use the 0 auto to make the .containerf box stay vertical center of the 
+body box */
 main .containerf {
     margin: 0 auto;
 
@@ -240,6 +242,8 @@ main .containerf {
     padding-top: 24px;
 }
 
+/* I don't know why when I use the width 100%,the input and textarea with a little bit longer 
+than the .containerf,so I test the width 98% to make it more like the mockup */
 .containerf input,
 textarea {
     width        : 98%;
@@ -305,12 +309,11 @@ footer p {
 }
 
 footer .icons {
-    display           : flex;
-    flex-direction    : row;
-    justify-content   : space-between;
-    max-width         : 130px;
-    /* margin         : 0 auto; */
-    margin-top        : 24px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    max-width      : 130px;
+    margin-top     : 24px;
 }
 
 /* =====footer end====== */
@@ -328,6 +331,7 @@ footer .icons {
         background-size  : contain;
     }
 
+    /* I use this to  */
     header div {
         text-align: center;
     }
@@ -469,7 +473,7 @@ footer .icons {
     }
 
     header img {
-        width: 235px;
+        max-width: 235px;
 
 
     }
@@ -486,6 +490,8 @@ footer .icons {
         margin-top     : 48px;
     }
 
+    /* I use the height equals the line-height to make
+    the element stay horizontal center in the father box*/
     nav a {
         width      : 257px;
         height     : 85px;
@@ -503,6 +509,9 @@ footer .icons {
         margin-bottom: 48px;
     }
 
+    /* I use the grid to make the grid system on the web page just like the mockup page
+    and on the width I use calc to make the width 100% just minus the 2 margin width.
+    I wonder if I can make the margin width more responsive,I will try next time */
     main .flexo {
         margin-left          : auto;
         margin-right         : auto;
@@ -520,6 +529,7 @@ footer .icons {
         width: 100%;
     }
 
+    /* just locate the elements in the grid system from 5th line to 10th line */
     main .flexo p {
         grid-column: 5/10;
         width      : 100%;
@@ -545,9 +555,10 @@ footer .icons {
         margin-right         : auto;
         display              : grid;
         grid-template-columns: repeat(9, 1fr);
+
+        /* I add the this line to make the two elements in one row*/
         grid-template-rows   : repeat(1, 1fr);
         column-gap           : 24px;
-        /* background-color  : aqua; */
         width                : calc(100% - 296px);
         margin-bottom        : 120px;
 

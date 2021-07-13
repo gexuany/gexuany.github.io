@@ -449,8 +449,8 @@ footer .icons {
         padding-left   : 82px;
         padding-right  : 82px;
     }
-/* /* use the calc to make 3 images width equal in the box and -5px is minus the half the 
-gap */
+/* use the calc to make 3 images width equal in the box and -5px is minus the half the 
+columns gap */
     .flex1 img {
         width: calc(100% / 3 - 5px);
     }
@@ -477,14 +477,16 @@ gap */
         width : 296px;
         height: 65px;
     }
-
+/* because there are multiple lines of the elements so I use the
+flex-wrap: wrap; */
     main .container2 .flex2 {
         display        : flex;
         flex-direction : row;
         flex-wrap      : wrap;
         justify-content: space-between;
     }
-
+/* use the calc to make 2 boxes width equal in the box and -6px is minus the half the 
+columns gap */
     main .container2 .card {
         width        : calc(100% / 2 - 6px);
         margin       : 0;
@@ -526,7 +528,7 @@ gap */
         padding-left     : 148px;
         padding-right    : 148px;
     }
-
+/* because the logo and h1 are in the same line so i use display:flex; */
     header .title {
         display        : flex;
         justify-content: space-between;
@@ -537,9 +539,10 @@ gap */
     header h1 {
         font-size: 80px;
     }
-
+/* In the desktop version mock up the logo width is 235px 
+but I use the max-width to make it more responsive; */
     header img {
-        width: 235px;
+        max-width: 235px;
 
 
     }
