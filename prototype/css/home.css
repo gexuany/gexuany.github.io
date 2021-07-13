@@ -369,7 +369,8 @@ footer .icons {
         width     : 100%;
     }
 
-    /* use the margin-left margin-right auto to make the group of icons to align center to the box */
+    /* use the margin-left margin-right auto to make the group of icons 
+    to align center to the box */
     footer .icons {
         margin-left : auto;
         margin-right: auto;
@@ -470,13 +471,13 @@ columns gap */
     .container2 {
         padding-left : 82px;
         padding-right: 82px;
-
     }
 
     main .container2 h2 {
         width : 296px;
         height: 65px;
     }
+
 /* because there are multiple lines of the elements so I use the
 flex-wrap: wrap; */
     main .container2 .flex2 {
@@ -485,6 +486,7 @@ flex-wrap: wrap; */
         flex-wrap      : wrap;
         justify-content: space-between;
     }
+
 /* use the calc to make 2 boxes width equal in the box and -6px is minus the half the 
 columns gap */
     main .container2 .card {
@@ -569,7 +571,7 @@ but I use the max-width to make it more responsive; */
     /* =======header end====== */
 
     main .banner {
-        height: 658px;
+        max-height: 658px;
     }
 
     main .container1 .flex1 {
@@ -651,14 +653,12 @@ but I use the max-width to make it more responsive; */
     }
 
 
-
     .container3 .icons {
         display        : flex;
         flex-direction : row;
         justify-content: space-between;
         min-width      : 130px;
         margin-top     : 24px;
-
     }
 
     footer div h4 {

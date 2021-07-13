@@ -409,12 +409,11 @@ footer .icons {
         width: 78.6%;
     }
 
-
-
     .form .containerf {
         width: 78.6%;
     }
 
+    /* I use the margin: 0 auto to make text stay horizontal center in the box */
     .form .button {
         width : 296px;
         margin: 0 auto;
@@ -461,6 +460,7 @@ footer .icons {
         padding-right    : 148px;
     }
 
+
     header .title {
         display        : flex;
         justify-content: space-between;
@@ -474,8 +474,6 @@ footer .icons {
 
     header img {
         max-width: 235px;
-
-
     }
 
     header div {
