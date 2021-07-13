@@ -135,6 +135,8 @@ table {
 
 /* =======My style======= */
 
+/* mobile first style I write all the default style of 3 version pages */
+
 /* =====header start====== */
 body {
     width: 100%;
@@ -149,6 +151,8 @@ h1 {
     text-align : center;
     line-height: 42px;
 }
+
+/* I use display:block to convert the a elements so it can be added width and height */
 
 nav a {
     display         : block;
@@ -190,6 +194,7 @@ main .container1 h2 {
     line-height: 100px;
 }
 
+/* use the flex to get the imgs align center */
 .flex1 {
     display       : flex;
     flex-direction: column;
@@ -197,6 +202,7 @@ main .container1 h2 {
     margin-top    : 12px;
 }
 
+/* use the percentage to make room for the margin */
 .flex1 img {
     width        : 77.33%;
     margin-bottom: 24px;
@@ -218,6 +224,7 @@ main .container1 h2 {
     height: 40px;
 }
 
+/* use the display block to add width and height to the input elements */
 input {
     display         : block;
     background-color: #E93F68;
@@ -347,6 +354,7 @@ footer .icons {
         background-size  : contain;
     }
 
+    /* use the text-align: center; to make the logo img align center to the page */
     header div {
         text-align: center;
     }
@@ -361,6 +369,7 @@ footer .icons {
         width     : 100%;
     }
 
+    /* use the margin-left margin-right auto to make the group of icons to align center to the box */
     footer .icons {
         margin-left : auto;
         margin-right: auto;
@@ -376,6 +385,7 @@ footer .icons {
 @media screen and (min-width: 768px) {
 
     /* =======header start====== */
+    /* use the background-image to give the header the background image */
     header {
         background-image : url('../images/Path-tablet.svg');
         background-repeat: no-repeat;
@@ -400,6 +410,9 @@ footer .icons {
         text-align: right;
     }
 
+    /* use display flex to align the a elements in the nav box and 
+    use the space-between to let the first one stick to the left
+    and the last one stick to the right */
     nav {
         display        : flex;
         flex-direction : row;
@@ -423,7 +436,7 @@ footer .icons {
     main .container1 div:nth-child(1) {
         height: 200px;
     }
-
+/* let the line-height = the height to let the h2 horizontal center in the box */
     main .container1 h2 {
         line-height: 200px;
     }
@@ -436,7 +449,8 @@ footer .icons {
         padding-left   : 82px;
         padding-right  : 82px;
     }
-
+/* /* use the calc to make 3 images width equal in the box and -5px is minus the half the 
+gap */
     .flex1 img {
         width: calc(100% / 3 - 5px);
     }
@@ -472,7 +486,6 @@ footer .icons {
     }
 
     main .container2 .card {
-        /* background-color: coral; */
         width        : calc(100% / 2 - 6px);
         margin       : 0;
         margin-bottom: 40px;
@@ -634,7 +647,7 @@ footer .icons {
         margin-right: auto;
     }
 
-   
+
 
     .container3 .icons {
         display        : flex;
