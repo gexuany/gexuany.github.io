@@ -147,6 +147,56 @@ h1 {
     text-align : center;
     line-height: 42px;
 }
+/* use this to make the h1 blink in 3 colors */
+/* animation */
+@keyframes blink {
+    0% {
+        transform: scale(1);
+      color: #fff;
+    }
+    60% {
+        transform: scale(1.05);
+      color: #F3D1CA;
+    }
+    100% {
+        transform: scale(1);
+      color: #000;
+    }
+  }
+  
+  h1 {
+     animation: blink 2s 5;
+  }
+
+/* I use display:block to convert the a elements so it can be added width and height */
+nav a {
+    display         : block;
+    height          : 24px;
+    color           : #fff;
+    font-family     : 'Josefin Sans', sans-serif;
+    font-size       : 14px;
+    text-decoration : none;
+    text-align      : center;
+    line-height     : 24px;
+    background-color: #F3D1CA;
+}
+
+nav a:hover {
+    background-color: #E93F68;
+}
+
+/* animation */
+ nav a:hover{
+    text-decoration : none;
+    transform: scale(1.1);
+    transition-property:scale;
+    transition-duration:1s;
+    transition-timing-function:ease-in-out;
+    transition-delay:.5s;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0s ease-in 0s;     
+} 
 
 nav a {
     display         : block;
@@ -179,16 +229,13 @@ main h2 {
 main p {
     font-family: 'Montserrat', sans-serif;
     text-align : center;
-
 }
 
-/*  */
+/* use this property to make the element in the .form stay vertical */
 main .form {
-
     background-color: #F9E8E5;
     display         : flex;
     flex-direction  : column;
-
 }
 
 main .owner {
@@ -204,14 +251,11 @@ main div input {
 body box */
 main .containerf {
     margin: 0 auto;
-
 }
 
 main label {
     display    : block;
     font-family: 'Josefin Sans', sans-serif;
-
-
 }
 
 main .button {
@@ -220,12 +264,10 @@ main .button {
     background-color: #E93F68;
     text-align      : center;
     color           : #fff;
-
 }
 
 main img {
     width: 57.33%;
-
 }
 
 main p {
@@ -233,8 +275,6 @@ main p {
     margin     : 24px auto;
     font-size  : 14px;
     line-height: 28px;
-
-
 }
 
 main .containerf {
@@ -251,10 +291,14 @@ textarea {
     margin-bottom: 24px;
 }
 
+/* I want to change the text in this area bigger but I don't know
+the property,i will try it next time */
 .containerf input {
     height: 48px;
 }
 
+/* I want to change the text in this area bigger but I don't know
+the property,i will try it next time */
 .containerf textarea {
     height: 175px;
 }
@@ -279,10 +323,7 @@ main iframe {
     width: 77.3%;
 }
 
-
-
 /* =====main end====== */
-
 
 /* =====footer start====== */
 
@@ -536,6 +577,8 @@ footer .icons {
         line-height: 64px;
     }
 
+    /* use the margin-left auto and margin-right auto to make the .containerf
+    stay vertical center in the box */
     .form .containerf {
         width       : 46.4%;
         margin-left : auto;
@@ -553,7 +596,6 @@ footer .icons {
         margin-right         : auto;
         display              : grid;
         grid-template-columns: repeat(9, 1fr);
-
         /* I add the this line to make the two elements in one row*/
         grid-template-rows   : repeat(1, 1fr);
         column-gap           : 24px;
@@ -585,12 +627,7 @@ footer .icons {
     }
 
 
-
-
-
-
     /* =======main end====== */
-
 
     /* ========footer start======= */
     footer {

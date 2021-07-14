@@ -152,8 +152,28 @@ h1 {
     line-height: 42px;
 }
 
-/* I use display:block to convert the a elements so it can be added width and height */
+/* use this to make the h1 blink in 3 colors */
+/* animation */
+@keyframes blink {
+    0% {
+        transform: scale(1);
+      color: #fff;
+    }
+    60% {
+        transform: scale(1.05);
+      color: #F3D1CA;
+    }
+    100% {
+        transform: scale(1);
+      color: #000;
+    }
+  }
+  
+  h1 {
+     animation: blink 2s 5;
+  }
 
+/* I use display:block to convert the a elements so it can be added width and height */
 nav a {
     display         : block;
     height          : 24px;
@@ -164,12 +184,24 @@ nav a {
     text-align      : center;
     line-height     : 24px;
     background-color: #F3D1CA;
-
 }
 
 nav a:hover {
     background-color: #E93F68;
 }
+
+/* animation */
+ nav a:hover{
+    text-decoration : none;
+    transform: scale(1.1);
+    transition-property:transform;
+    transition-duration:1s;
+    transition-timing-function:ease-in-out;
+    transition-delay:.5s;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0s ease-in 0s;     
+} 
 
 /* =====header end====== */
 
@@ -261,6 +293,8 @@ main .container2 h2 {
     margin-bottom   : 24px;
 }
 
+/*Use this property to make elements stay in column 
+and align center*/
 .flex2 {
     display       : flex;
     flex-direction: column;
@@ -281,7 +315,6 @@ main .container2 h2 {
 
 .card div {
     padding-top: 0;
-
     padding-bottom: 36px;
 }
 
@@ -301,7 +334,6 @@ main .container2 h2 {
     line-height: 16px;
     text-align : center;
 }
-
 /*container2 end */
 
 /* =====main end====== */
@@ -432,12 +464,16 @@ footer .icons {
         font-size       : 18px;
     }
 
+    /* animation */
+    
+
     /* =======header end====== */
 
     main .container1 div:nth-child(1) {
         height: 200px;
     }
-/* let the line-height = the height to let the h2 horizontal center in the box */
+
+    /* let the line-height = the height to let the h2 horizontal center in the box */
     main .container1 h2 {
         line-height: 200px;
     }
@@ -450,8 +486,9 @@ footer .icons {
         padding-left   : 82px;
         padding-right  : 82px;
     }
-/* use the calc to make 3 images width equal in the box and -5px is minus the half the 
-columns gap */
+
+    /* use the calc to make 3 images width equal in the box and -5px is minus the half the 
+    columns gap */
     .flex1 img {
         width: calc(100% / 3 - 5px);
     }
@@ -478,8 +515,8 @@ columns gap */
         height: 65px;
     }
 
-/* because there are multiple lines of the elements so I use the
-flex-wrap: wrap; */
+    /* because there are multiple lines of the elements so I use the
+    flex-wrap: wrap; */
     main .container2 .flex2 {
         display        : flex;
         flex-direction : row;
@@ -487,8 +524,8 @@ flex-wrap: wrap; */
         justify-content: space-between;
     }
 
-/* use the calc to make 2 boxes width equal in the box and -6px is minus the half the 
-columns gap */
+    /* use the calc to make 2 boxes width equal in the box and -6px is minus the half the 
+    columns gap */
     main .container2 .card {
         width        : calc(100% / 2 - 6px);
         margin       : 0;
@@ -530,7 +567,8 @@ columns gap */
         padding-left     : 148px;
         padding-right    : 148px;
     }
-/* because the logo and h1 are in the same line so i use display:flex; */
+
+    /* because the logo and h1 are in the same line so i use display:flex; */
     header .title {
         display        : flex;
         justify-content: space-between;
@@ -541,12 +579,11 @@ columns gap */
     header h1 {
         font-size: 80px;
     }
-/* In the desktop version mock up the logo width is 235px 
-but I use the max-width to make it more responsive; */
+
+    /* In the desktop version mock up the logo width is 235px 
+    but I use the max-width to make it more responsive; */
     header img {
         max-width: 235px;
-
-
     }
 
     header div {
@@ -648,10 +685,11 @@ but I use the max-width to make it more responsive; */
         justify-content: space-between;
     }
 
+    /* I use this property to make the first div box stick to the right
+    of the row */
     .container3 div:nth-child(1) {
         margin-right: auto;
     }
-
 
     .container3 .icons {
         display        : flex;
