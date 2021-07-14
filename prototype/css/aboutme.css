@@ -372,6 +372,10 @@ footer .icons {
         background-size  : contain;
     }
 
+    main iframe{
+        height: 300px;
+    }
+
     /* I use this to  */
     header div {
         text-align: center;
@@ -471,6 +475,10 @@ footer .icons {
     main p {
         font-size  : 18px;
         line-height: 36px;
+    }
+
+    main iframe{
+        height: 400px;
     }
 
     /* =======footer start======= */
