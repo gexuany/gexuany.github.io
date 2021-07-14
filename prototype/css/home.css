@@ -244,16 +244,19 @@ main .container1 h2 {
     width: 77.33%;
 }
 
-.flex1 p {
+.container1 p {
     color      : #000;
     font-size  : 12px;
     font-family: 'Montserrat', sans-serif;
     line-height: 16px;
+    /* background-color:#E93F68; */
 }
 
-.flex1 div:nth-child(2) {
-    width : 142px;
-    height: 40px;
+.container1 p {
+    width : 77.33%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* use the display block to add width and height to the input elements */
