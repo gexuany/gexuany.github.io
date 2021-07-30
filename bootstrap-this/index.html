@@ -32,13 +32,13 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Introduction</a>
+                            <a class="nav-link active" aria-current="page" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Functions</a>
+                            <a class="nav-link" href="#function">Functions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact US</a>
+                            <a class="nav-link" href="#contactus">Contact us</a>
                         </li>
                     </ul>
                     <!-- <span class="navbar-text">
@@ -98,7 +98,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="about">
             <h1 class="text-center py-5">About</h1>
             <h2 class="text-center py-5">Introduction</h2>
             <p class="text-center my-2 px-2 offset-3 col-6">Bootstrap is a modular web design tool that can be used
@@ -107,76 +107,82 @@
                 website.</p>
             <h2 class="text-center py-5">History</h2>
             <p class="text-center my-2 px-2 offset-3 col-6">
-
+                Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter.
+                They build is as a framework to encourage consistency across internal tools.The development of Bootstrap
+                has gone through 5 versions. Bootstrap 5 was officially released on May 5, 2021. It has undergone many
+                improvements and adjustments.
             </p>
-        </section class="my-4">
-
+        </section>
+        <section id="function" class="my-4">
         <h1 class="text-center py-5">
             Functions
         </h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4 col-10 offset-1">
             <div class="col">
-              <div class="card">
-                <img src="images/card1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="card">
+                    <img src="images/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Open resource</h5>
+                        <p class="card-text">Bootstrap is an open-code resource that can be used for free so that
+                            everyone can participate in adjustment and development.</p>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="images/card2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="card">
+                    <img src="images/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile First</h5>
+                        <p class="card-text">Bootstrap is very friendly to mobile. The developer considers mobile-first
+                            so that the user's design is more adapted to the mobile interface.</p>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="images/card3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <div class="card">
+                    <img src="images/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Components library</h5>
+                        <p class="card-text">Bootstrap has a rich library of elements, allowing users to call and adjust
+                            quickly. And these elements are responsive.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-            
-          </div>
+
+        </div>
         </section>
 
-        <section class="my-4">
+        <section id="contactus" class="my-4">
             <h1 class="text-center py-5">
-                Contact Me
+                Contact us
             </h1>
-            <div class="row align-items-center g-lg-5 py-5">
+            <!-- <div class="row align-items-center g-lg-5 py-5">
                 <div class="col-lg-7 text-center text-lg-start">
                     <h1 class="display-4 fw-bold lh-1 mb-3">Vertically centered hero sign-up form</h1>
                     <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form
                         controls. Each required form group has a validation state that can be triggered by
                         attempting to submit the form without completing it.</p>
-                </div>
-                <div class="col-md-10 mx-auto col-lg-5">
-                    <form class="p-4 p-md-5 border rounded-3 bg-light">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
-                        </div>
-                        <div class="checkbox mb-3">
-                            <label>
-                                <input type="checkbox" value="remember-me"> Remember me
-                            </label>
-                        </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-                        <hr class="my-4">
-                        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-                    </form>
-                </div>
+                </div> -->
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-light">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                    <hr class="my-4">
+                    <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                </form>
+            </div>
             </div>
 
 
@@ -187,7 +193,7 @@
 
     <footer class="container">
         <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>Images are all from https://unsplash.com/ <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </footer>
 
 
