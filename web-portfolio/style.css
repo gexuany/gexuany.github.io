@@ -1,2 +1,58 @@
+/* Mobile  first  the default style */
+
+
 /* header */
 
+.container{
+    width:85.6%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+
+.top{
+    background-color:#F9E4DD;
+    /* width: 100%; */
+    /* display: grid;
+    grid-template-columns: repeat(8, 1fr); */
+    min-height: 143px;
+    /* grid-column:1/9; */
+    /* padding-bottom: 24px; */
+    
+
+}
+.logo{
+    grid-column: 1/5;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.logo img{
+    max-width: 74px;
+    margin-top: 36px;
+    
+}
+
+/* .btn-group{
+    margin-bottom:24px;
+} */
+
+.top nav{
+    grid-column:7/9; 
+    background-color: blueviolet;
+
+    /* margin-top: 230px;
+    align-self: center; */
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* main */
+
+/* footer */
