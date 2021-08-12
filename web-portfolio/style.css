@@ -137,21 +137,23 @@ ul li a {
 
 
 .home-2 img {
-    width              : 55%;
-    display            : block;
-    margin             : auto;
-    /* text-align      : center; */
-    /* line-height     : 160px; */
-    /* margin-bottom   : 10px; */
+    width  : 55%;
+    display: block;
+    margin : auto;
+
 
 }
 
 .home-3 img {
-    width           : 50%;
-    display         : block;
-    margin          : auto;
-    /* line-height  : 160px; */
-    /* margin-bottom: 10px; */
+    width  : 50%;
+    display: block;
+    margin : auto;
+
+
+}
+
+.home-3 {
+    margin-bottom: 24px;
 }
 
 
@@ -192,71 +194,104 @@ ul li a {
 }
 
 .about-img-1 img {
-    /* grid-column: 3/7; */
-    /* width: 41.3%; */
-    max-width    : 155px;
+
+
+    /* the percentage of the image is relatively to 
+    the parent element which is the container,so
+    I calculate the percentage of the image base on that*/
+
+    width        : 48.3%;
     margin-bottom: 36px;
 }
 
-/* Q  */
+
 
 .about-p-education {
     background-color: #F9E4DD;
-    padding-top     : calc(100%/4 - 46.5px);
-    padding-bottom  : calc(100%/4 - 46.5px);
+    height          : 230px;
 
-    padding-top   : 70px;
-    padding-bottom: 70px;
+    /* I use this to make the son element 
+    stay horizonally center */
+
+    display: flex;
+
 
 }
 
-/* Q  */
+.about-p-education p {
+    margin-bottom: 0;
+    margin       : auto;
 
-.about-2 div:nth-child(1) {
-    /* background-image: url(images/1.png); */
-    /* height          : 156px; */
-    height          : 100%;
-    background-color: gold;
+    /* background-color: darkkhaki; */
+
 }
 
-.about-2 div:nth-child(2) {
-    /* background-image: url(images/2.png); */
-    /* height          : 156px; */
-    height: : 100%;
-}
 
-.about-2 div:nth-child(3) {
-    /* background-image: url(images/3.png); */
-    /* height          : 156px; */
-    height: : 100%;
-}
 
-.about-2 div:nth-child(4) {
-    /* background-image: url(images/4.png); */
-    /* height          : 156px; */
-    height: : 100%;
-}
+
+
 
 .about-2 {
-    display  : flex;
-    flex-wrap: wrap;
+    display               : flex;
+    flex-wrap             : wrap;
+    /* justify-content    : center; */
+    /* background-color   : cornflowerblue; */
+    /* margin-bottom      : 40px; */
+
+    /* Q  */
+
+}
+
+.about-2 div {
+    width              : 50%;
+    margin-bottom      : 8px;
+    /* background-color: blueviolet; */
+    /* margin-bottom   : -24px; */
+}
+
+.about-2 div:nth-child(1),
+.about-2 div:nth-child(2) {
+    /* background-color: coral; */
+    margin-bottom: -24px;
+
+}
+
+/* I use this to make the image leave the column gap */
+.about-2 div:nth-child(2),
+.about-2 div:nth-child(4) {
+    /* background-color: coral; */
+    text-align: right;
 
 }
 
 
 
+/* the width of the image is 100% of the parent elements and
+minus the half oh the column gap */
+.about-2 div img {
+    width: calc(100% - 4px);
+
+}
+
+
+/* I use the this to put the text on the image */
+.about-2 div p {
+    position        : relative;
+    top             : -32px;
+    background-color: rgba(39, 214, 226, 0.4);
+    font-weight     : 500;
+}
 
 
 
 /* about main end*/
 
-
+/* ======about====== */
 
 /* footer start*/
 
 footer {
     background-color   : #F9E4DD;
-    margin-top         : 24px;
     padding-top        : 24px;
     padding-bottom     : 24px;
     /* background-color: fuchsia; */
@@ -281,7 +316,7 @@ footer p {
 
 /* footer end*/
 
-/* ====home start==== */
+
 
 
 
@@ -289,7 +324,7 @@ footer p {
 /* tablet start*/
 @media screen and (min-width: 768px) {
 
-    /* ====home start==== */
+    /* ======home====== */
 
     .container {
         width : 81.25%;
@@ -365,7 +400,6 @@ footer p {
         /* padding-top              : calc(100%/2 - 106px);  */
         /* padding-bottom           : calc(100%/2 - 106px); */
         /* background-color         : firebrick; */
-
         /* Q */
     }
 
@@ -443,8 +477,104 @@ footer p {
         text-align: center;
     }
 
+    .home-3 {
+        margin-bottom: 32px;
+    }
+
 
     /* main end */
+
+    /* ======home====== */
+
+    /* ======about====== */
+
+    /* about main start */
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size  : 16px;
+        line-height: 32px;
+    }
+
+    .about .about-1 {
+        display              : grid;
+        grid-template-columns: repeat(8, 1fr);
+        column-gap           : 8px;
+    }
+
+    .about .about-img-1 {
+        grid-column        : 1/4;
+        /* background-color: crimson; */
+    }
+
+    .about-img-1 img {
+        width        : 100%;
+        margin-bottom: 0;
+    }
+
+    .about-1 .about-1-p {
+        grid-column        : 5/9;
+        margin-bottom      : 0;
+        /* background-color: darkcyan; */
+        /* I use this to make the paragraph horizontally center */
+        display            : flex;
+        justify-content    : center;
+        align-items        : center;
+
+
+    }
+
+    .about-1-p p {
+        margin-bottom      : 0;
+        /* margin-top      : calc(100%/2 - 108px); */
+        /* margin-bottom   : auto; */
+        /* background-color: darkkhaki; */
+
+    }
+
+    .about-2 {
+        margin-bottom: 64px;
+    }
+
+    .about-2 {
+        flex-wrap      : nowrap;
+        justify-content: space-between;
+    }
+
+    .about-2 div {
+        width        : calc(100%/4 - 4px);
+        margin-bottom: 0;
+        margin-bottom: -48px;
+    }
+
+    /* Q */
+
+    .about-2 div img {
+        width: 100%;
+    }
+
+    .about-2 div p {
+        width              : 100%;
+        /* background-color: darkmagenta; */
+    }
+
+    .about-2 div p {
+        position: relative;
+        top     : -48px;
+    }
+
+
+    .about-2 div:nth-child(2),
+    .about-2 div:nth-child(4) {
+        text-align: left;
+    }
+
+
+    /* ======about====== */
+
+
     /* footer start*/
     footer .container {
         display              : grid;
@@ -478,8 +608,11 @@ footer p {
 
 }
 
-
 /* footer end*/
+
+
+
+
 
 /* Desktop  */
 @media screen and (min-width: 1280px) {
@@ -572,8 +705,67 @@ footer p {
         /* Q  */
     }
 
+    .home-3 {
+        margin-bottom: 48px;
+    }
+
     /* main end */
 
+    /* ======home====== */
+
+    /* ======about====== */
+    .about h2 {
+        font-size  : 36px;
+        font-weight: 700;
+    }
+
+    .about .about-1,
+    .about .about-p-education {
+        font-size          : 18px;
+        line-height        : 40px;
+        /* background-color: darkmagenta; */
+    }
+
+    .about-1 .about-img-1 {
+        grid-column: 2/4;
+    }
+
+    .about-1 .about-1-p {
+        grid-column: 5/8;
+    }
+
+    .about .about-2 p {
+        font-size: 24px;
+    }
+
+    .about-2 div p {
+        position: relative;
+        top     : -64px;
+    }
+
+    .about-2 div {
+        width        : calc(100%/4 - 8px);
+        margin-bottom: 0;
+        margin-bottom: -64px;
+
+    }
+
+    /* ======about====== */
+
+
+
+
+    /* ======projects====== */
+
+
+
+    /* ======projects====== */
+
+
+
+
+
+    
     /* footer start */
     footer p {
         font-size: 16px;
@@ -581,6 +773,7 @@ footer p {
 
     footer .footer-p {
         grid-column: 2/4;
+
     }
 
     footer .btn {
