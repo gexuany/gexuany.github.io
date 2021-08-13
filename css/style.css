@@ -14,11 +14,9 @@ body {
 }
 
 .container-top {
-    display                 : grid;
-    grid-template-columns   : repeat(8, 1fr);
-    /* margin-bottom        : 0;
-    margin                  : auto; */
-    /* background-color     : coral; */
+    display              : grid;
+    grid-template-columns: repeat(8, 1fr);
+
 }
 
 .top {
@@ -33,27 +31,33 @@ body {
 }
 
 .logo img {
-    max-width: 74px;
-
+    max-width    : 74px;
     margin-top   : 36px;
     margin-bottom: 34px;
 }
 
 
 .top nav {
-    grid-column        : 7/9;
-    /* background-color: blueviolet; */
-    /* background-color: chartreuse; */
-    padding-top        : 12px;
-    padding-bottom     : 16px;
+    grid-column           : 7/9;
+    /* background-color   : blueviolet; */
+    /* background-color   : chartreuse; */
+    padding-top           : 12px;
+    padding-bottom        : 16px;
+
+}
+
+ /* I use this to overwrite the bootstrap css */
+ol,
+ul {
+    padding-left: 0;
 }
 
 nav ul {
-    height             : 100%;
-    display            : flex;
-    flex-direction     : column;
-    justify-content    : space-between;
-    /* background-color: brown; */
+    height         : 100%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+
 }
 
 nav ul li {
@@ -96,7 +100,8 @@ ul li a:active {
 /* home-1 start */
 
 .home {
-    margin-bottom: 32px;
+    margin-bottom      : 32px;
+    /* background-color: aqua; */
 }
 
 .home-1 {
@@ -166,6 +171,7 @@ and horizontally in the center */
 /* ======about====== */
 
 /* about main start*/
+
 .about h2 {
     font-size    : 18px;
     font-weight  : 700;
@@ -180,12 +186,7 @@ and horizontally in the center */
     text-align : center;
 }
 
-/* .about-1 {
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
 
-
-} */
 
 .about-img-1 {
     text-align: center;
