@@ -4,6 +4,8 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+/* ======home====== */
+
 /* header  start*/
 .container {
     width  : 85.6%;
@@ -32,6 +34,7 @@ body {
 
 .logo img {
     max-width    : 74px;
+    
     margin-top   : 36px;
     margin-bottom: 34px;
 }
@@ -58,12 +61,29 @@ nav ul li {
     text-align: center;
 }
 
+nav ul li:hover{
+    background-color: #fff;
+}
+
 ul li a {
     text-decoration: none;
     color          : #333333;
+    /* color: darksalmon; */
     font-size      : 12px;
     font-weight    : 700;
 }
+
+ul li a:hover{
+    color:#000;
+    background-color:#fff;
+}
+
+ul li a:active{
+    color:#4D3232;
+    background-color:#fff;
+}
+
+
 
 /* header  end*/
 
@@ -73,25 +93,28 @@ ul li a {
 
 /* home-1 start */
 
+.home {
+    margin-bottom: 32px;
+}
+
+.home-1 {
+    margin-bottom: 32px;
+}
 
 .title {
-    max-height                  : 268px;
-    /* background-color         : cornflowerblue; */
-    padding-top                 : 90px;
-    padding-bottom              : 90px;
-    padding-top                 : calc(100%/2 - 79px);
-    padding-bottom              : calc(100%/2 - 79px);
-
+    min-height    : 268px;
+    padding-top   : 90px;
+    padding-bottom: 90px;
+    display       : flex;
 }
 
 .title p {
-    font-size        : 24px;
-    font-weight      : 700;
-    text-align       : center;
-    line-height      : 48px;
-    letter-spacing   : 2px;
-    /* margin-top    : auto; */
-    /* margin-bottom : auto; */
+    font-size     : 24px;
+    font-weight   : 700;
+    text-align    : center;
+    line-height   : 36px;
+    letter-spacing: 2px;
+    margin        : auto;
 }
 
 .home-1 img {
@@ -100,66 +123,40 @@ ul li a {
 
 /* home-1 end */
 
-/* home-2 and home-3 start */
+/* home-2 start */
 
 
-
-.home-text-1,
-.home-text-2 {
-    background-color      : #F9E4DD;
-    padding-top           : 60px;
-    padding-bottom        : 60px;
-    padding-top           : calc(100%/2 - 103px);
-    padding-bottom        : calc(100%/2 - 103px);
-    margin-bottom         : 10px;
-    min-height            : 160px;
-    /* background-color   : darkseagreen;  */
+.home-2-text1,
+.home-2-text2 {
+    background-color: #F9E4DD;
+    display         : flex;
+    min-height      : 160px;
 }
 
-.home-text-1 h3,
-.home-text-2 h3 {
+/* I use this to make the h3 stay in the parent element vertically
+and horizontally in the center */
+.home-2 h3 {
     font-size  : 12px;
     font-weight: 700;
     text-align : center;
+    margin     : auto;
 
-    /* background-color   : deepskyblue; */
-    /* line-height        : 160px; */
 }
 
-.home-2-img,
-.home-3-img {
-    min-height: 160px;
-}
+.home-2 {
+    display           : grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap           : 8px;
 
-.home-2-img {
-    margin-bottom: 10px;
 }
-
 
 .home-2 img {
-    width  : 55%;
-    display: block;
-    margin : auto;
-
-
-}
-
-.home-3 img {
-    width  : 50%;
-    display: block;
-    margin : auto;
-
-
-}
-
-.home-3 {
-    margin-bottom: 24px;
+    width: 100%;
 }
 
 
 
-
-/* home-2 and home-3 end */
+/* home-2 end */
 /* home main end*/
 
 /* ======home====== */
@@ -222,22 +219,13 @@ ul li a {
     margin-bottom: 0;
     margin       : auto;
 
-    /* background-color: darkkhaki; */
-
 }
-
-
-
-
 
 
 .about-2 {
     display               : flex;
     flex-wrap             : wrap;
-    /* justify-content    : center; */
-    /* background-color   : cornflowerblue; */
-    /* margin-bottom      : 40px; */
-
+    
     /* Q  */
 
 }
@@ -245,8 +233,7 @@ ul li a {
 .about-2 div {
     width              : 50%;
     margin-bottom      : 8px;
-    /* background-color: blueviolet; */
-    /* margin-bottom   : -24px; */
+    
 }
 
 .about-2 div:nth-child(1),
@@ -265,12 +252,10 @@ ul li a {
 }
 
 
-
 /* the width of the image is 100% of the parent elements and
 minus the half oh the column gap */
 .about-2 div img {
     width: calc(100% - 4px);
-
 }
 
 
@@ -278,15 +263,108 @@ minus the half oh the column gap */
 .about-2 div p {
     position        : relative;
     top             : -32px;
-    background-color: rgba(39, 214, 226, 0.4);
+    /* background-color: rgba(39, 214, 226, 0.4); */
     font-weight     : 500;
 }
-
 
 
 /* about main end*/
 
 /* ======about====== */
+
+/* ======projects====== */
+
+.projects {
+    margin-bottom: 64px;
+}
+
+.projects h2 {
+    font-size    : 24px;
+    font-weight  : 700;
+    margin-top   : 64px;
+    margin-bottom: 32px;
+    text-align   : center;
+}
+
+.projects p {
+    font-size    : 16px;
+    text-align   : center;
+    margin-bottom: 32px;
+}
+
+.projects img {
+    width: 100%;
+}
+
+.projects-1 {
+    display           : grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap           : 8px;
+
+}
+
+.projects-2 div:nth-child(1) {
+    margin-bottom: 32px;
+}
+
+.projects-3 {
+    display           : grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap           : 8px;
+}
+
+
+/* ======projects====== */
+
+/* ======contact====== */
+
+.contact {
+    margin-bottom: 64px;
+
+}
+
+.contact h2 {
+    font-size    : 24px;
+    font-weight  : 700;
+    margin-top   : 64px;
+    margin-bottom: 32px;
+}
+
+.contact label {
+    font-size    : 16px;
+    font-weight  : 700;
+    margin-bottom: 6px;
+}
+
+
+
+.contact label:nth-child(2),
+.contact label:nth-child(3) {
+    margin-top: 6px;
+
+}
+
+.form-control {
+    border-radius: 0;
+    border-color : #4D3232;
+}
+
+.contact button {
+    height          : 24px;
+    margin-top      : 12px;
+    background-color: #707070;
+    border          : 0;
+    font-size       : 16px;
+    font-weight     : 700;
+}
+
+.contact button:hover {
+    background-color: #F9E4DD;
+    color           : #707070;
+
+}
+
+/* ======contact====== */
 
 /* footer start*/
 
@@ -317,25 +395,20 @@ footer p {
 /* footer end*/
 
 
-
-
-
-
 /* tablet start*/
 @media screen and (min-width: 768px) {
-
-    /* ======home====== */
 
     .container {
         width : 81.25%;
         margin: 0 auto;
     }
 
+    /* ======home====== */
+
     /* header start */
     body .top {
         /* background-color: #F9E4DD; */
         max-height: 180px;
-
     }
 
     .logo img {
@@ -377,113 +450,90 @@ footer p {
 
     /* header end */
 
-    /* main start */
 
-    .home-1 {
-        min-height: 250px;
-    }
+    /* ======home====== */
+    /* home-1 start */
 
-    .home-1 {
-        display           : flex;
-        /* flex-direction : column; */
-        justify-content   : center;
-        align-content     : center;
-    }
-
-    .container .home-1 .title {
-        height                      : 100%;
-        /* min-height               : 250px; */
-        padding                     : 0;
-        /* background-color         : darkred; */
-        padding-top                 : 72px;
-        /* padding-bottom           : 72px; */
-        /* padding-top              : calc(100%/2 - 106px);  */
-        /* padding-bottom           : calc(100%/2 - 106px); */
-        /* background-color         : firebrick; */
-        /* Q */
-    }
-
-
-    .container .home-1 p {
-        font-size             : 32px;
-        font-weight           : 700;
-        line-height           : 60px;
-        /* background-color   : darkorange; */
-        margin-top            : auto;
-        margin-bottom         : auto;
-    }
-
-
-    .home-1,
-    .home-2 {
-        display        : flex;
-        justify-content: space-between;
-        justify-content: center;
-        align-content  : center;
-    }
-
-    .home-1 {
-        margin-top: 24px;
-    }
-
-    .home-3 {
-        display        : flex;
-        flex-direction : row-reverse;
-        justify-content: space-between;
-        justify-content: center;
-        align-content  : center;
-    }
-
-    .home-2,
-    .home-3 {
-        margin-top: 32px;
-    }
-
-    .title,
-    .home-1-banner,
-    .home-text-1,
-    .home-2-img,
-    .home-text-2,
-    .home-2-img {
-        width: calc(100%/2 - 4px);
-    }
-
-    main .home-text-1,
-    main .home-text-2 {
-        min-height    : 160px;
-        padding-top   : 30px;
-        padding-bottom: 30px;
-
-    }
-
-
-    main .home-text-1 h3,
-    main .home-text-2 h3 {
-        font-size  : 24px;
-        font-weight: 700;
-        line-height: 36px;
-    }
-
-    main .home-3-img img {
-        width            : 55%;
-        margin           : 0 auto;
-        /* height        : 100%; */
-        /* line-height   : 160px; */
-        /* Q */
-    }
-
-    main .home-2-img img,
-    main .home-3-img img {
-        text-align: center;
-    }
-
-    .home-3 {
+    .home {
+        margin-top   : 24px;
         margin-bottom: 32px;
     }
 
+    .home-1 {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        padding: 0;
+        display: flex;
+    }
+
+    .title p {
+        font-size     : 32px;
+        font-weight   : 700;
+        text-align    : center;
+        line-height   : 64px;
+        letter-spacing: 2px;
+        margin        : auto;
+    }
+
+    .home-1 img {
+        width: 100%;
+    }
+
+    /* home-1 end */
+
+    /* home-2 start */
+
+    .home-2-text1,
+    .home-2-text2 {
+        background-color: #F9E4DD;
+        display         : flex;
+        min-height      : 160px;
+    }
+
+    /* I use this to make the h3 stay in the parent element vertically
+and horizontally in the center */
+    .home-2 h3 {
+        font-size  : 24px;
+        line-height: 36px;
+        font-weight: 700;
+        text-align : center;
+        margin     : auto;
+    }
+
+    /* I use grid area to put the item in the 
+    right order*/
+
+    .home-2 {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows   : repeat(2, 1fr);
+        row-gap              : 32px;
+        column-gap           : 8px;
+        grid-template-areas  :
+            "a b"
+            "c d";
+    }
+
+    .home-2-text1 {
+        grid-area: a;
+    }
+
+    .home-2-img1 {
+        grid-area: b;
+    }
+
+    .home-2-text2 {
+        grid-area: d;
+    }
+
+    .home-2-img2 {
+        grid-area: c;
+    }
 
     /* main end */
-
     /* ======home====== */
 
     /* ======about====== */
@@ -522,16 +572,11 @@ footer p {
         display            : flex;
         justify-content    : center;
         align-items        : center;
-
-
     }
 
     .about-1-p p {
         margin-bottom      : 0;
-        /* margin-top      : calc(100%/2 - 108px); */
-        /* margin-bottom   : auto; */
-        /* background-color: darkkhaki; */
-
+        
     }
 
     .about-2 {
@@ -574,19 +619,86 @@ footer p {
 
     /* ======about====== */
 
+    /* ======projects====== */
+    .projects {
+        margin-bottom: 64px;
+    }
+
+    .projects h2 {
+        font-size: 36px;
+
+    }
+
+    .projects p {
+        font-size: 24px;
+
+        margin-bottom: 32px;
+    }
+
+
+
+    main .projects-1,
+    main .projects-3 {
+        display              : grid;
+        grid-template-rows   : repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        row-gap              : 8px;
+        column-gap           : 8px;
+    }
+
+
+    /* ======projects====== */
+
+    /* ======contact====== */
+
+    .contact {
+        margin-bottom: 64px;
+
+    }
+
+    .contact h2 {
+        font-size       : 36px;
+    }
+
+    .contact label {
+        font-size    : 24px;
+        margin-bottom: 16px;
+
+    }
+
+    .contact label:nth-child(2),
+    .contact label:nth-child(3) {
+        margin-top: 12px;
+    }
+
+    .contact textarea {
+        min-height: 120px;
+    }
+
+    .contact button {
+        height             : 42px;
+        margin-top         : 20px;
+        font-size          : 24px;
+    }
+
+    .contact button:hover {
+        background-color: #F9E4DD;
+        color           : #707070;
+    }
+
+    /* ======contact====== */
+
+
 
     /* footer start*/
     footer .container {
         display              : grid;
         grid-template-columns: repeat(8, 1fr);
 
-
-
     }
 
     footer .footer-p {
         grid-column        : 1/4;
-        /* background-color: darkgrey; */
         margin             : 0;
         height             : min-content;
     }
@@ -600,7 +712,6 @@ footer p {
 
     .footer-btn {
         grid-column        : 6/9;
-        /* background-color: darkolivegreen; */
         margin             : 0;
         padding            : 0;
         height             : min-content;
@@ -610,17 +721,12 @@ footer p {
 
 /* footer end*/
 
-
-
-
-
 /* Desktop  */
 @media screen and (min-width: 1280px) {
 
 
     /* header start */
     body .top {
-        /* background-color: #F9E4DD; */
         max-height: 300px;
 
     }
@@ -632,85 +738,102 @@ footer p {
     }
 
 
-
-
     nav ul {
-        /* display                 : grid; */
-        /* grid-template-columns   : repeat(4, 1fr); */
+        
         column-gap              : 16px;
-        /* background-color     : cadetblue; */
+        
     }
 
     nav ul li {
         padding-top        : 220px;
-        /* background-color: crimson; */
-        /* Q */
+        
     }
 
     nav ul li a {
-        /* display         : block; */
-        /* background-color: #707070; */
         height             : 48px;
         line-height        : 48px;
-        /* color           : #fff; */
         font-size          : 24px;
-        /* font-weight     : 500px;  */
+        
     }
 
     /* header end */
 
-    /* main start */
+    /* ======home====== */
+
+    /* home-1 start */
+
+    .home {
+        margin-top   : 32px;
+        margin-bottom: 48px;
+    }
+
     .home-1 {
-        min-height: 420px;
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .container .home-1 .title {
-        height                      : 100%;
-        /* min-height               : 250px; */
-        padding                     : 0;
-        /* background-color         : darkred; */
-        padding-top                 : 128px;
-        /* padding-bottom           : 72px; */
-        /* padding-top              : calc(100%/2 - 106px); */
-        /* padding-bottom           : calc(100%/2 - 106px); */
-        /* background-color         : firebrick; */
+    .title {
+        padding: 0;
+        display: flex;
     }
 
-    .container .home-1 p {
-        font-size                : 48px;
-        font-weight              : 700;
-        line-height              : 108px;
-        /* background-color      : darkorange; */
-        /* margin-top            : auto; */
-        /* margin-bottom         : auto; */
+    .title p {
+        font-size     : 48px;
+        font-weight   : 700;
+        text-align    : center;
+        line-height   : 120px;
+        letter-spacing: 2px;
+        margin        : auto;
     }
 
-    main .home-1,
-    main .home-2,
-    main .home-3 {
-        margin-bottom: 48px;
+    /* home-1 end */
+    /* home-2 start */
+
+    .home-2-text1,
+    .home-2-text2 {
+        background-color: #F9E4DD;
+        display         : flex;
+        min-height      : 160px;
     }
 
-    main .home-text-1,
-    main .home-text-2 {
-        /* background-color      : #F9E4DD; */
-        /* padding-top        : 60px; */
-        /* padding-bottom     : 60px; */
-        padding-top        : 85px;
-        /* padding-top     : calc(100%/2 - 103px); */
-        /* padding-bottom  : calc(100%/2 - 103px); */
-        /* margin-bottom   : 10px; */
-        /* min-height      : 272px; */
-        /* background-color: darkseagreen; */
-        /* Q  */
+    /* I use this to make the h3 stay in the parent element vertically
+and horizontally in the center */
+    .home-2 h3 {
+        font-size  : 24px;
+        line-height: 36px;
+        /* font-weight: 700; */
+        text-align : center;
+        margin     : auto;
     }
 
-    .home-3 {
-        margin-bottom: 48px;
+    .home-2 {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows   : repeat(2, 1fr);
+        row-gap              : 32px;
+        column-gap           : 8px;
+        grid-template-areas  :
+            "a b"
+            "c d";
     }
 
-    /* main end */
+    .home-2-text1 {
+        grid-area: a;
+    }
 
+    .home-2-img1 {
+        grid-area: b;
+    }
+
+    .home-2-text2 {
+        grid-area: d;
+    }
+
+    .home-2-img2 {
+        grid-area: c;
+    }
+
+   
     /* ======home====== */
 
     /* ======about====== */
@@ -723,7 +846,6 @@ footer p {
     .about .about-p-education {
         font-size          : 18px;
         line-height        : 40px;
-        /* background-color: darkmagenta; */
     }
 
     .about-1 .about-img-1 {
@@ -753,19 +875,57 @@ footer p {
     /* ======about====== */
 
 
+    /* ======projects====== */
 
 
     /* ======projects====== */
 
+    .projects {
+        margin-bottom: 80px;
+    }
 
+
+
+    .projects p {
+        /* font-size: 24px; */
+
+        margin-bottom: 48px;
+    }
+
+    main .projects-1,
+    main .projects-3 {
+        display              : grid;
+        grid-template-rows   : repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        row-gap              : 16px;
+        column-gap           : 16px;
+    }
 
     /* ======projects====== */
 
+    /* ======contact====== */
+
+    .contact {
+        margin-bottom: 80px;
+
+    }
+
+
+
+    .contact label {
+        font-size: 24px;
+
+
+    }
+
+
+
+    /* ======contact====== */
 
 
 
 
-    
+
     /* footer start */
     footer p {
         font-size: 16px;
