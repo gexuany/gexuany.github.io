@@ -79,10 +79,27 @@ ul li a {
     width          : 100%;
 }
 
+/* animation */
 ul li a:hover {
     color           : #000;
     background-color: #fff;
+    border-radius: 6px;
+    transform: scale(1.1);
+    transition-property:scale;
+    
+    
+    transform: translateY(-6px);
+    
+    
+
+   
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.3);
+    transition: box-shadow .2s ease-in .2s;    
+    
 }
+
+
 
 ul li a:active {
     color           : #4D3232;
