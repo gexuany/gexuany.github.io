@@ -61,9 +61,9 @@ nav ul li {
     text-align: center;
 }
 
-nav ul li:hover{
+/* nav ul li:hover{
     background-color: #fff;
-}
+} */
 
 ul li a {
     text-decoration: none;
