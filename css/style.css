@@ -83,8 +83,9 @@ ul li a:hover {
     color           : #000;
     background-color: #fff;
     border-radius: 6px;
+    
     transform: translateY(-6px);
-    transition: transform .2s ease-in .2s; 
+    transition: transform .2s ease-in 1s; 
     
     
     /* offset-x | offset-y | blur-radius | spread-radius | color */
